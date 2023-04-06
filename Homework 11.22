@@ -1,0 +1,12 @@
+#input words to check repeat
+words = input("Please enter words to calculate:").split()
+#words are split up so we can search in them individually
+for word in words:
+#count starts at 0 for no repeats
+   count = 0
+   for repeat in words:
+#going through words again to compare to first run through
+       if word == repeat:
+#adding to count when word comes up again.
+           count += 1
+   print(word, count)
