@@ -1,0 +1,9 @@
+
+#enter numbers for sorting
+enter_numbs = input("Please enter numbers separated by a space:")
+#adding numbers to list and filtering the negative numbers
+numb_list = [int(i) for i in enter_numbs.split() if (int(i)>=0)]
+#sort function
+numb_list.sort()
+# separating numbers by the space and filtering numbers through sort.
+[print(i, end=' ') for i in numb_list]
